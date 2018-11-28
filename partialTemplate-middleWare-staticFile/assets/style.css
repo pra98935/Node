@@ -1,0 +1,13 @@
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+ }
+ p{
+     text-align: center;
+     font-size: 40px;
+     color: white;
+ }
+ body{
+     background-color: skyblue;
+ }
