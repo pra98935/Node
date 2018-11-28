@@ -1,0 +1,19 @@
+{
+  "name": "express-nodemon-template-routing",
+  "version": "1.0.0",
+  "description": "first dummy basic example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "prashant",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7"
+  }
+}
