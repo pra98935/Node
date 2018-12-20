@@ -6,4 +6,6 @@ var myReadStream = fs.createReadStream(__dirname + '/streamfile.txt');
 //var myReadStream = fs.readFileSync('streamfile.txt');
 myReadStream.on('data', function(chunk){
     console.log(chunk);
+    console.log(__filename);
 }) 
+
