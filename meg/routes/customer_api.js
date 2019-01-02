@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '',
-  database : 'node_meg'
+  database : 'node'
 });
  
 connection.connect(function(err) {
@@ -58,11 +58,16 @@ router.post('/', (req, res) => {
 });
 
 router.post('/updatepassword', (req, res) => {
-    let newPassword = rq.body.newPassword;
+    let newPassword = req.body.password;
     let email_id = req.body.email_id;
 
     let sqlQuery = "UPDATE meg_users SET password = '"+ newPassword +"' WHERE email_id='"+ email_id +"'";
-
+    connection.query(sqlQuery, (error, result) => {
+        res.status(200).json({
+            "message":"Your password successfully updated",
+            result:result
+        })
+    })
 })
 
 module.exports = router;

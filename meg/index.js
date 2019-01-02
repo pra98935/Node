@@ -24,7 +24,10 @@ app.use(bodyParser.json())
 // });
 
 var customerAPIRoutes = require('../meg/routes/customer_api');
+var generalAPIRoutes = require('../meg/routes/general_api');
+
 app.use('/customer_api', customerAPIRoutes);
+app.use('/general_api', generalAPIRoutes);
 
 app.get('/', (req, res) => {
     res.send('home');
