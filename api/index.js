@@ -18,7 +18,7 @@ app.get('/getUserList', function(req, res){ // test
     });
 });
 
-app.post('/addUser', function (req, res) { // childbranch
+app.post('/addUser', function (req, res) { // childbranch2
     // First read existing users.
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
