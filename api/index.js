@@ -11,7 +11,7 @@ var user = { //test
     }
 }
 
-app.get('/getUserList', function(req, res){
+app.get('/getUserList', function(req, res){ // test
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
         console.log( data );
         res.end( data );
